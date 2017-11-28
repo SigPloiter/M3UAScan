@@ -22,7 +22,7 @@ Usage: m3uascan.py -l [sctp listening IP] -p [sctp listening port]-r [Remote sub
 
 Example: ./m3uascan.py -l 192.168.1.1 -p 2905 -r 179.0.0.0/16 -P 2906 -o output.txt
 
-Or you can use the built-in sctp ports in the script
+Or you can opt-out "-P" and use the built-in sctp ports in the script
 
 Disclaimair: sctp ports were taken from the SCTPscanner provided by P1Security. Along with pysctp.py. Credit goes to P1Security on both 
 
