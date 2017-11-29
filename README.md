@@ -11,6 +11,8 @@ M3UA scan is simple scanner that aims to help pentesters to identify nodes that 
 
 Detecting a node with m3ua is an indication that this is a node core node in a telecom infrastructure that provides signaling. This scanner could be helpful to identify signaling nodes exposed on the internet, that could be compromised and used as a gate to the SS7 network.
 
+One benefit could be testing if telecom nodes are hardened and only forming sctp associations with the nodes that suppose to connect to only, testing if there is some filtering done on the nodes to prevent anyone to perform sctp associations with it thus connect to the network.
+
 # Requirements
 
 sudo apt-get install libsctp1 libsctp-dev lksctp-tools
