@@ -15,7 +15,7 @@ One benefit could be testing if telecom nodes are hardened and only forming sctp
 
 # Requirements
 
-sudo apt-get install libsctp1 libsctp-dev lksctp-tools
+sudo ./setup.py install
 
 # Usage
 
