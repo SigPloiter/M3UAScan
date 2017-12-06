@@ -122,21 +122,7 @@ if __name__=='__main__':
      
 
      #List of ports provided by P1sec sctp scanner
-     sctp_ports = [1,
-             7,       # echo
-             9,       # discard
-             20,      # ftp-data
-             21,      # ftp
-             22,      # ssh
-             80,      # http
-             100,
-             128,
-             179,     # bgp
-             260,
-             250,
-             443,     # https
-             1167,    # cisco-ipsla - Cisco IP SLAs Control Protocol
-             1812,    # radius
+     sctp_ports = [
              2097,
              2000,    # Huawei UMG8900 MGW H248 port
              2001,    # Huawei UMG8900 MGW H248 port
@@ -167,8 +153,6 @@ if __name__=='__main__':
              3864,    # RSerPool's ENRP protocol (asap-sctp/tls) -- http:#tdrwww.iem.uni-due.de/dreibholz/rserpool/
              3868,    # Diameter
              4000,    # m3ua common port
-             4739,    # IPFIX (IP Flow Info Export) default port -- http:#tools.ietf.org/wg/ipfix/
-             4740,    # IPFIX (IP Flow Info Export) over DTLS default port -- http:#tools.ietf.org/wg/ipfix/
              5000,
              5001,
              5060,    # SIP - Session Initiation Protocol
@@ -205,10 +189,7 @@ if __name__=='__main__':
              7800,    # found in the wild
              8000,    # found in the wild, MTP3 / BICC
              8001,    # found in the wild
-             8471,    # pim-port PIM over Reliable Transport
              8787,    # iua test port for some CISCO default configurations
-             9006,    # tunneling?
-             9084,    # IBM AURORA Performance Visualizer
              9899,    # sctp-tunneling, actually is usually tcp/udp based but could come from human error
              9911,    # iua test port for some CISCO default configurations
              9900,    # sua (SCCP User Adaptation layer) or iua (ISDN Q.921 User Adaptation -- http:#rfc.archivesat.com/rfc4166.htm)  (default for Huawei UMG8900 MGW)
@@ -217,9 +198,6 @@ if __name__=='__main__':
              10000,
              10001,
              11146,    # Local port for M3UA, Cisco BTS 10200 Softswitch
-             11997,    # wmereceiving - WorldMailExpress 
-             11998,    # wmedistribution - WorldMailExpress 
-             11999,    # wmereporting - WorldMailExpress 
              12205,    # Local port for SUA, Cisco BTS uses for FSAIN communication is usually 12205,
              12235,    # Local port for SUA, Cisco BTS usage for FSPTC
              13000,    # m3ua -- py sms m3ua default ports
